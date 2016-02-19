@@ -1,0 +1,29 @@
+{
+  "name": "react-web-test",
+  "version": "1.0.0",
+  "description": "react-web 事例",
+  "main": "index.js",
+  "scripts": {
+    "watch": "coffee -o ./lib/ -cw ./src/",
+    "watch-webpack": "coffee -b -o ./ -cw ./webpack.config.coffee",
+    "start": "webpack-dev-server --config webpack.config.js --progress --inline --colors",
+    "build": "NODE_ENV=production webpack --config webpack.config.js --progress --colors",
+    "jade": " jade -P -w index.jade"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "material-ui": "^0.14.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-tap-event-plugin": "^0.2.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "jsx-loader": "^0.13.2",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.7.3"
+  }
+}
