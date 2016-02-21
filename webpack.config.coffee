@@ -56,7 +56,7 @@ if NODE_ENV is 'development'
         },
         {
           test: /\.jsx?$/,
-          loaders: ['react-hot', 'jsx?harmony'],
+          loaders: ['react-hot', 'babel'],
           include: path.join(__dirname, 'lib')
         }
       ]
