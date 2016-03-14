@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "coffee -o ./lib/ -cw ./src/",
     "watch-webpack": "coffee -b -o ./ -cw ./webpack.config.coffee",
-    "start": "webpack-dev-server --config webpack.config.js --progress --inline --colors",
+    "start": "webpack-dev-server --config webpack.config.js --host 0.0.0.0 --progress --inline --colors",
     "build": "NODE_ENV=production webpack --config webpack.config.js --progress --colors",
     "jade": " jade -P -w index.jade"
   },
